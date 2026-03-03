@@ -17,15 +17,15 @@ const regions = [
 
 // ─── Properties ─────────────────────────────────────────────────────────────
 const properties = [
-  { id:1, region:"miami-beach", title:"Penthouse Ocean Drive",          location:"South Beach, Miami Beach",       type:"Luxury Penthouse",  price:620, rating:4.97, reviews:214, beds:3, baths:2, guests:6, tag:"Top Pick",          tagColor:CORAL,     gradient:`linear-gradient(135deg,${NAVY} 0%,#1a6bb5 50%,#7ecef4 100%)`,  emoji:"🏙️", highlights:["Ocean view","Private pool","24h Concierge"] },
-  { id:2, region:"miami-beach", title:"Art Deco Villa Collins Ave",     location:"Mid-Beach, Miami Beach",         type:"Historic Villa",    price:380, rating:4.92, reviews:87,  beds:2, baths:2, guests:4, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,${NAVY} 0%,#2c5282 50%,#4a90d9 100%)`,  emoji:"🏛️", highlights:["Art Deco architecture","Steps to beach","Tropical garden"] },
-  { id:3, region:"miami-beach", title:"Beachfront Luxury Apartment",    location:"North Beach, Miami Beach",       type:"Apartment",         price:290, rating:4.88, reviews:163, beds:2, baths:1, guests:4, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,#0d4f3c 0%,#1a8a6e 50%,#5ecfb0 100%)`, emoji:"🌴", highlights:["Oceanfront","Gourmet kitchen","Parking included"] },
-  { id:4, region:"key-west",   title:"Conch Cottage — Old Town Heart", location:"Old Town, Key West",             type:"Historic Cottage",  price:310, rating:4.96, reviews:301, beds:2, baths:1, guests:4, tag:"Guest Favorite",   tagColor:"#00A699", gradient:`linear-gradient(135deg,#7b2d00 0%,${CORAL} 50%,#f1948a 100%)`, emoji:"🏡", highlights:["Century-old home","Porch swing","5 min Duval St"] },
-  { id:5, region:"key-west",   title:"Tropical Bungalow with Pool",    location:"New Town, Key West",             type:"Bungalow",          price:420, rating:4.91, reviews:119, beds:3, baths:2, guests:6, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,#4a1a6b 0%,#8e44ad 50%,#c39bd3 100%)`, emoji:"🌺", highlights:["Private pool","Private pier","Gulf views"] },
-  { id:6, region:"sarasota",   title:"Siesta Key Beachfront Villa",    location:"Siesta Key, Sarasota",           type:"Beach Villa",       price:545, rating:4.98, reviews:78,  beds:4, baths:3, guests:8, tag:"New",              tagColor:GOLD,      gradient:`linear-gradient(135deg,#7a4000 0%,${GOLD} 50%,#f9ca74 100%)`, emoji:"🌊", highlights:["White sand at door","Chef kitchen","BBQ gazebo"] },
-  { id:7, region:"sarasota",   title:"Lido Beach Cottage",             location:"Lido Beach, Sarasota",           type:"Cottage",           price:280, rating:4.85, reviews:54,  beds:2, baths:2, guests:4, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,#0d5c4a 0%,#16a085 50%,#76d7c4 100%)`, emoji:"🏖️", highlights:["Beach access","Bikes included","St. Armands nearby"] },
-  { id:8, region:"homestead",  title:"Organic Farm — Redland Estate",  location:"Redland, Homestead",             type:"Boutique Farm",     price:195, rating:4.94, reviews:142, beds:2, baths:1, guests:4, tag:"Unique Experience",tagColor:"#27ae60", gradient:`linear-gradient(135deg,#1a4a1a 0%,#27ae60 50%,#a9dfbf 100%)`, emoji:"🌿", highlights:["Pick-your-own harvest","Farm trails","Organic breakfast"] },
-  { id:9, region:"homestead",  title:"Everglades Edge Cabin",          location:"Homestead, near National Park", type:"Eco-cabin",         price:165, rating:4.89, reviews:96,  beds:1, baths:1, guests:2, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,#3b1f0f 0%,#8d6e63 50%,#bcaaa4 100%)`, emoji:"🌳", highlights:["Everglades gateway","Bird watching","Rustic & cozy"] },
+  { id:1, region:"miami-beach", title:"Penthouse Ocean Drive",          location:"South Beach, Miami Beach",       type:"Luxury Penthouse",  price:620, rating:4.97, reviews:214, beds:3, baths:2, guests:6, tag:"Top Pick",          tagColor:CORAL,     gradient:`linear-gradient(135deg,${NAVY} 0%,#1a6bb5 50%,#7ecef4 100%)`,  emoji:"🏙️", image:"https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?auto=format&fit=crop&w=600&h=400&q=80", highlights:["Ocean view","Private pool","24h Concierge"] },
+  { id:2, region:"miami-beach", title:"Art Deco Villa Collins Ave",     location:"Mid-Beach, Miami Beach",         type:"Historic Villa",    price:380, rating:4.92, reviews:87,  beds:2, baths:2, guests:4, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,${NAVY} 0%,#2c5282 50%,#4a90d9 100%)`,  emoji:"🏛️", image:"https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=600&h=400&q=80", highlights:["Art Deco architecture","Steps to beach","Tropical garden"] },
+  { id:3, region:"miami-beach", title:"Beachfront Luxury Apartment",    location:"North Beach, Miami Beach",       type:"Apartment",         price:290, rating:4.88, reviews:163, beds:2, baths:1, guests:4, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,#0d4f3c 0%,#1a8a6e 50%,#5ecfb0 100%)`, emoji:"🌴", image:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&h=400&q=80", highlights:["Oceanfront","Gourmet kitchen","Parking included"] },
+  { id:4, region:"key-west",   title:"Conch Cottage — Old Town Heart", location:"Old Town, Key West",             type:"Historic Cottage",  price:310, rating:4.96, reviews:301, beds:2, baths:1, guests:4, tag:"Guest Favorite",   tagColor:"#00A699", gradient:`linear-gradient(135deg,#7b2d00 0%,${CORAL} 50%,#f1948a 100%)`, emoji:"🏡", image:"https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&h=400&q=80", highlights:["Century-old home","Porch swing","5 min Duval St"] },
+  { id:5, region:"key-west",   title:"Tropical Bungalow with Pool",    location:"New Town, Key West",             type:"Bungalow",          price:420, rating:4.91, reviews:119, beds:3, baths:2, guests:6, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,#4a1a6b 0%,#8e44ad 50%,#c39bd3 100%)`, emoji:"🌺", image:"https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&h=400&q=80", highlights:["Private pool","Private pier","Gulf views"] },
+  { id:6, region:"sarasota",   title:"Siesta Key Beachfront Villa",    location:"Siesta Key, Sarasota",           type:"Beach Villa",       price:545, rating:4.98, reviews:78,  beds:4, baths:3, guests:8, tag:"New",              tagColor:GOLD,      gradient:`linear-gradient(135deg,#7a4000 0%,${GOLD} 50%,#f9ca74 100%)`, emoji:"🌊", image:"https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=600&h=400&q=80", highlights:["White sand at door","Chef kitchen","BBQ gazebo"] },
+  { id:7, region:"sarasota",   title:"Lido Beach Cottage",             location:"Lido Beach, Sarasota",           type:"Cottage",           price:280, rating:4.85, reviews:54,  beds:2, baths:2, guests:4, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,#0d5c4a 0%,#16a085 50%,#76d7c4 100%)`, emoji:"🏖️", image:"https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&h=400&q=80", highlights:["Beach access","Bikes included","St. Armands nearby"] },
+  { id:8, region:"homestead",  title:"Organic Farm — Redland Estate",  location:"Redland, Homestead",             type:"Boutique Farm",     price:195, rating:4.94, reviews:142, beds:2, baths:1, guests:4, tag:"Unique Experience",tagColor:"#27ae60", gradient:`linear-gradient(135deg,#1a4a1a 0%,#27ae60 50%,#a9dfbf 100%)`, emoji:"🌿", image:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&h=400&q=80", highlights:["Pick-your-own harvest","Farm trails","Organic breakfast"] },
+  { id:9, region:"homestead",  title:"Everglades Edge Cabin",          location:"Homestead, near National Park", type:"Eco-cabin",         price:165, rating:4.89, reviews:96,  beds:1, baths:1, guests:2, tag:null,               tagColor:null,      gradient:`linear-gradient(135deg,#3b1f0f 0%,#8d6e63 50%,#bcaaa4 100%)`, emoji:"🌳", image:"https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=600&h=400&q=80", highlights:["Everglades gateway","Bird watching","Rustic & cozy"] },
 ];
 
 // ─── Regional services ───────────────────────────────────────────────────────
@@ -100,14 +100,27 @@ function BPFLogo({ size = "md" }) {
 
 function PropertyCard({ property }) {
   const [liked, setLiked] = useState(false);
+  const [imgErr, setImgErr] = useState(false);
   return (
     <div className="rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group">
       <div className="relative h-48 overflow-hidden" style={{ background:property.gradient }}>
-        <div className="absolute inset-0 flex items-center justify-center text-8xl opacity-20 group-hover:scale-110 transition-transform duration-500 select-none pointer-events-none">
-          {property.emoji}
-        </div>
+        {/* Real photo — falls back to gradient+emoji on error */}
+        {property.image && !imgErr ? (
+          <img
+            src={property.image}
+            alt={property.title}
+            onError={()=>setImgErr(true)}
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center text-8xl opacity-20 group-hover:scale-110 transition-transform duration-500 select-none pointer-events-none">
+            {property.emoji}
+          </div>
+        )}
+        {/* Dark gradient overlay so text is always readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
         <div className="absolute bottom-0 left-0 p-3">
-          <p className="text-white text-xs uppercase tracking-widest font-semibold opacity-90 drop-shadow">{property.type}</p>
+          <p className="text-white text-xs uppercase tracking-widest font-semibold drop-shadow">{property.type}</p>
         </div>
         {property.tag && (
           <div className="absolute top-3 left-3 text-white text-xs font-bold px-3 py-1 rounded-full shadow" style={{ backgroundColor:property.tagColor }}>
