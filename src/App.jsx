@@ -335,7 +335,7 @@ export default function App() {
         <div className="relative max-w-7xl mx-auto px-4 py-14 text-center">
           <div className="mb-3"><BPFLogo size="lg"/></div>
           <p className="italic text-lg mb-2 font-light" style={{ color:"rgba(255,255,255,0.75)", fontFamily:"Georgia,serif" }}>
-            "Where every stay becomes a memory."
+            "Where every stay is a blast."
           </p>
           <p className="text-sm mb-8" style={{ color:"rgba(255,255,255,0.5)", letterSpacing:"0.1em" }}>beachpartyfun.com</p>
           <div className="flex flex-wrap justify-center gap-3">
