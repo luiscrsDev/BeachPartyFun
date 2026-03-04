@@ -437,7 +437,7 @@ export default function App() {
             <div>
               <BPFLogo size="md"/>
               <p className="italic text-sm mt-1" style={{ color:"rgba(255,255,255,0.5)", fontFamily:"Georgia,serif" }}>
-                "Where every stay becomes a memory."
+                "Where every stay is a blast."
               </p>
               <p className="text-xs mt-1" style={{ color:"rgba(255,255,255,0.3)" }}>beachpartyfun.com</p>
             </div>
